@@ -185,7 +185,7 @@ footer {
 
 .social-links {
   display: flex;
-  justify-content: flex-end; /* Iconos a la derecha */
+  justify-content: center; /* Icons to the middle */
   gap: 1rem;
   margin-top: 1rem;
 }
