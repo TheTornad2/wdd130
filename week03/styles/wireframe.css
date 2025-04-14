@@ -1,4 +1,6 @@
-/* Color variables */
+/*===============================
+  VARIABLES
+=================================*/
 :root {
   --primary-color: #003049;
   --secondary-color: #d62828;
@@ -7,24 +9,26 @@
   --accent3-color: #eae2b7;
 }
 
-/* Base styles */
+/*===============================
+  BASE STYLES
+=================================*/
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--primary-color);
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 1400px; /* Anchura máxima para alineación */
+  max-width: 1400px; /* Max width for alignment */
   padding: 0 20px;
 }
 
 section {
-  margin: 4rem 0; /* Repetición de márgenes */
+  margin: 4rem 0; /* Consistent section spacing */
 }
 
 h2 {
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 2rem; /* Proximidad uniforme */
+  margin-bottom: 2rem; /* Uniform spacing */
 }
 
 h1,
@@ -33,14 +37,16 @@ h3 {
   font-family: 'Changa One', cursive;
 }
 
-/* Header styles */
+/*===============================
+  HEADER
+=================================*/
 header {
   display: grid;
   grid-template-columns: auto 1fr; /* Logo | Nav */
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
-  gap: 2rem; /* Espacio uniforme */
+  gap: 2rem; /* Even spacing */
 }
 
 .logo-box img {
@@ -50,7 +56,7 @@ header {
 
 nav ul {
   display: flex;
-  list-style: flex-end;
+  list-style: none;
   gap: 1.5rem;
 }
 
@@ -65,7 +71,9 @@ nav a:hover {
   color: var(--accent2-color);
 }
 
-/* Hero section */
+/*===============================
+  HERO SECTION
+=================================*/
 .hero {
   position: relative;
   text-align: center;
@@ -113,13 +121,15 @@ nav a:hover {
 }
 
 .hero article img {
-  float: right; /* Imagen flotante a la derecha */
+  float: right; /* Float image to the right */
   width: 150px;
   margin-left: 1rem;
   border-radius: 8px;
 }
 
-/* History section */
+/*===============================
+  HISTORY SECTION
+=================================*/
 .history {
   padding: 2rem;
   max-width: 1000px;
@@ -131,7 +141,9 @@ nav a:hover {
   color: var(--secondary-color);
 }
 
-/* History Grid */
+/*===============================
+  HISTORY GRID
+=================================*/
 .history-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,7 +157,9 @@ nav a:hover {
   border-radius: 8px;
 }
 
-/* Adventure section */
+/*===============================
+  ADVENTURE SECTION
+=================================*/
 .adventure {
   padding: 2rem;
   text-align: center;
@@ -170,7 +184,9 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styles */
+/*===============================
+  FOOTER
+=================================*/
 footer {
   background-color: var(--primary-color);
   color: white;
@@ -181,13 +197,9 @@ footer {
 
 .social-links {
   margin-top: 1rem;
-}
-
-.social-links {
   display: flex;
-  justify-content: center; /* Icons to the middle */
+  justify-content: center; /* Center icons */
   gap: 1rem;
-  margin-top: 1rem;
 }
 
 .social-links img {
@@ -200,10 +212,14 @@ footer {
   transform: scale(1.2);
 }
 
+/*===============================
+  RESPONSIVE STYLES
+=================================*/
 @media (max-width: 768px) {
   .history-content {
     grid-template-columns: 1fr;
   }
+
   header {
     grid-template-columns: 1fr;
   }
