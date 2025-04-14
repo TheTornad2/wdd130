@@ -1,0 +1,229 @@
+/*===============================
+  VARIABLES
+=================================*/
+:root {
+  --primary-color: #003049;
+  --secondary-color: #d62828;
+  --accent1-color: #f77f00;
+  --accent2-color: #fcbf49;
+  --accent3-color: #eae2b7;
+}
+
+/*===============================
+  BASE STYLES
+=================================*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-color);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 0 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Changa One', cursive;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h3 { font-size:  2.5rem;}
+
+section {
+  margin: 4rem 0;
+}
+
+/*===============================
+  HEADER
+=================================*/
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  gap: 2rem;
+}
+
+.logo-box img {
+  height: 100px;
+  justify-self: start;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: var(--accent2-color);
+}
+
+/*===============================
+  CONTACT INFO
+=================================*/
+.contact-info {
+  background-color: var(--accent3-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+/*===============================
+  CONTACT FORM
+=================================*/
+.contact-form {
+  background-color: var(--accent1-color);
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  color: white;
+}
+
+.contact-form label {
+  display: block;
+  margin: 0.8rem 0 0.4rem;
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.contact-form button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color);
+}
+
+/*===============================
+  EMPLOYEES SECTION
+=================================*/
+.employees {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.employees h3 {
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.employee {
+  display: inline-block;
+  margin: 1rem;
+  text-align: center;
+  max-width: 200px;
+}
+
+.employee img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.employee p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/*===============================
+  MAP SECTION
+=================================*/
+.map {
+  margin: 3rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.map h3 {
+  margin-bottom: 1rem;
+  color: var(--secondary-color);
+}
+
+/*===============================
+  FOOTER
+=================================*/
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+footer .social-links {
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social-links img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+footer .social-links img:hover {
+  transform: scale(1.1);
+}
