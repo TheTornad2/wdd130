@@ -1,6 +1,7 @@
 /*===============================
   VARIABLES
 =================================*/
+
 :root {
   --primary-color: #003049;
   --secondary-color: #d62828;
@@ -12,6 +13,7 @@
 /*===============================
   BASE STYLES
 =================================*/
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--primary-color);
