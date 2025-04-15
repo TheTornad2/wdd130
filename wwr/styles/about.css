@@ -14,6 +14,12 @@
   BASE STYLES
 =================================*/
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--primary-color);
@@ -42,9 +48,10 @@ h3 {
 /*===============================
   HEADER
 =================================*/
+
 header {
   display: grid;
-  grid-template-columns: auto 1fr; /* Logo | Nav */
+  grid-template-columns: auto 1fr;
   align-items: center;
   padding: 1rem 2rem;
   background-color: var(--primary-color);
@@ -57,9 +64,11 @@ header {
 }
 
 nav ul {
-  display: flex;
   list-style: none;
+  display: flex;
   gap: 1.5rem;
+  justify-content: flex-end;
+  margin: 0;
 }
 
 nav a {
@@ -77,8 +86,10 @@ nav a:hover {
   HERO SECTION
 =================================*/
 .hero {
+  margin-top: 2rem;
   position: relative;
   text-align: center;
+  color:#fff;
 }
 
 .hero img {
@@ -93,7 +104,7 @@ nav a:hover {
   left: 50%;
   transform: translateX(-50%);
   color: var(--secondary-color);
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(3.5rem, 5vw, 4rem);
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
   width: 100%;
   text-align: center;
