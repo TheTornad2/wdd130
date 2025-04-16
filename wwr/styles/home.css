@@ -45,6 +45,12 @@ h3 {
 /*===============================
     HEADER
   =================================*/
+
+.centered-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
 header {
   display: grid;
   grid-template-columns: auto 1fr;
