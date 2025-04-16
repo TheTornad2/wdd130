@@ -32,7 +32,9 @@ section {
   margin: 4rem 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Changa One', cursive;
 }
 
@@ -49,6 +51,12 @@ h3 {
 /*===============================
   HEADER
 ================================*/
+
+.centered-content {
+  text-align: center;
+  margin: 0 auto;
+}
+
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -123,8 +131,8 @@ nav a.active {
   font-weight: bold;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
+.contact-form input[type='text'],
+.contact-form input[type='email'],
 .contact-form textarea {
   width: 100%;
   padding: 0.6rem;
@@ -134,8 +142,8 @@ nav a.active {
   margin-bottom: 1rem;
 }
 
-.contact-form input[type="radio"],
-.contact-form input[type="checkbox"] {
+.contact-form input[type='radio'],
+.contact-form input[type='checkbox'] {
   margin-right: 0.5rem;
 }
 
